@@ -1,42 +1,47 @@
-/* Blue-Larry */
+/* Autumn-Larry */
 
-.webkit .messagelist tr > .authres_status
-{
-    width: 20px;
+.webkit .messagelist tr > .authres_status {
+  width: 20px;
 }
 
 .messagelist tr > .authres_status {
-    width: 20px;
-    padding: 2px 3px;
-    text-align: center;
+  width: 20px;
+  padding: 2px 3px;
+  text-align: center;
 }
 
 .messagelist tr > .authres_status span {
-    display: inline-block;
-    vertical-align: middle;
-    background: url(badge.png) center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(badge.svg) center no-repeat;
+  background-size: 15px auto; /* 15px wide, keep aspect ratio */
 }
 
+/* Settings section row */
 #sections-table tbody #rcmrowauthres_status td.section {
-	background-image: url(badge2.png);
-	background-position: 10px 5px;
+  background-image: url(badge.svg);
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  background-size: 15px auto; /* 15px wide, same position */
 }
 
 #sections-table tbody #rcmrowauthres_status.selected td.section {
-	background-image: url(badge.png);
-	background-repeat: no-repeat;
-	background-position: 10px 5px;
+  background-image: url(badge2.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  background-size: 15px auto; /* 15px wide, same position */
 }
 
+/* Existing <img> rules left untouched */
 .authres-status-img {
-    vertical-align: top;
-    height: 14px;
-    width: 14px;
+  vertical-align: top;
+  height: 14px;
+  width: 14px;
 }
 
 .widescreen .authres-status-img {
-    position: relative;
-    top: -1px;
-    height: 12px;
-    width: 12px;
+  position: relative;
+  top: -1px;
+  height: 12px;
+  width: 12px;
 }
